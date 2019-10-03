@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Home</title>
+        <meta charset="utf-8"/>
+        <meta name="author" content="Elvis Knelson">
+        <meta name="viewport" content="width=device-width, initial-scale=0.650">
+        <script src="scripts/cars.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Varela+Round" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="scripts/stylesheet.css">
+    </head>
+    <body id="accountbody">
+        <a href="home.html"><img class="logo" src="images/logo.png" alt="Logo Image"/></a>   
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="models.html">Model S</a></li>
+                <li><a href="model3.html">Model 3</a></li>
+                <li><a href="modelx.html">Model X</a></li>
+                <li><a href="roadster.html">Roadster</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <div id="accountdiv"><img src="images/userthumb.png" id="defaultuserimg" alt="User Account Image"></div>
+            </ul>
+        </nav>
+
+        <div id="backgroundColorLogin">
+            <form method="POST" action="loginsystem/create.php" id="loginform">
+                <div class="info">
+					<ol>
+						<li>
+							<input id="username" name="username" type="text" autofocus="">
+							<label for="username" class="black">Username:</label>
+						</li>
+						<li>
+							<input name="password1" type="password">
+							<label for="password" class="black">Password:</label>
+                        </li>
+                        <li>
+							<input name="password2" type="password">
+							<label for="password" class="black">Retype Password:</label>
+                        </li>
+                        <li>
+							<button id="submitbutton" type="submit">Create Account</button>
+						</li>
+					</ol>
+				</div>
+            </form>
+        </div>
+        <footer>
+            <ul>
+                <li><a href="models.html">Model S</a></li>
+                <li><a href="model3.html">Model 3</a></li>
+                <li><a href="modelx.html">Model X</a></li>
+                <li><a href="roadster.html">Roadster</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">Tesla © 2019</a></li>
+            </ul>
+        </footer>
+    </body>
+</html>

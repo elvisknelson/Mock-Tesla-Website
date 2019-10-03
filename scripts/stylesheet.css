@@ -1,0 +1,613 @@
+/* *{
+    border: solid 1px black;
+} */
+
+@font-face {
+    font-family: 'teslaregular';
+    src: url('tesla.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+}
+
+#cartype{
+    font-family: var(--tds-sans-font_stack--medium);
+    color: white;
+    text-align: center;
+    margin: 0;
+    margin-top: 100px;
+    font-size: 45px;
+}
+
+#mainbuttons{
+    display: flex;
+    justify-content: center;
+}
+
+#topdiv{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px rgb(184, 184, 184);
+}
+
+#customcar{
+    width: 70%;
+    border-right: solid 1px rgb(184, 184, 184);
+}
+
+#greyCar{
+    border: 0;
+    background: url(../images/custom/ui_grey.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#blackCar{
+    border: 0;
+    background: url(../images/custom/ui_black.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#whiteCar{
+    border: 0;
+    background: url(../images/custom/ui_white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#blueCar{
+    border: 0;
+    background: url(../images/custom/ui_blue.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+#redCar{
+    border: 0;
+    background: url(../images/custom/ui_red.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+button{
+    padding: 26px 26px;
+    margin: 0px 15px 0 5px;
+}
+
+#commentbutton{
+    margin: 0;
+    padding: 0;
+}
+
+#colors{
+    display: flex;
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+}
+
+.carPage{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: black;
+}
+
+.custom{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    background-color: white;
+}
+
+#roadstervideo{
+    display: block;
+    margin: 45px auto;
+    width: 80%;
+}
+
+#video{
+    display: block;
+    margin: 300px auto;
+    width: 80%;
+}
+
+#modelsvideo{
+    display: block;
+    margin: 0 auto;
+    width: 30%;
+}
+
+#model3video{
+    display: block;
+    margin: 0px auto;
+    width: 100%;
+}
+
+#mainvideo{
+    display: flex;
+    margin: 350px auto;
+    width: 100%;
+}
+
+.left{
+    margin: 0;
+    float: left;
+}
+
+.right{
+    margin: 0;
+    float: right;
+}
+
+#submitbutton{
+    padding: 0;
+    margin-top: 5px;
+    float: right;
+}
+
+#backgroundRoadster{
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+#roadsterStats{
+    color: white;
+    margin: auto;
+    width: 800px;
+    height: 700px;
+}
+
+.stat{
+    margin: 15px 0;
+    width: 100%;
+    height: 25px;
+}
+
+.stat:first-of-type{
+    margin-top: 135px;
+}
+
+
+#maindesk{
+    width: 100%;
+    height: 1100px;
+    z-index: -1;
+    position: absolute;
+    object-fit: none;
+    object-position: initial;
+}
+
+#backgroundColorLogin{
+    margin: auto;
+    padding: 140px;
+    display: flex;
+    padding-bottom: 640px;
+}
+
+.label{
+    float: left;
+}
+
+.black{
+    color: black;
+}
+
+#white{
+    color: white;
+}
+
+div ol li p{
+    font-size: 12px;
+    color: red;
+}
+
+#center{
+    text-align: center;
+}
+
+footer ul{
+    display: flex;
+    justify-content: center;
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 50px;
+    padding: 0;
+    font-size: 12px;
+}
+
+footer ul#custom{
+    display: flex;
+    justify-content: center;
+    float: left;
+    list-style-type: none;
+    width: 100%;
+    margin: 0;
+    margin-top: 450px;
+    padding: 0;
+    font-size: 12px;
+}
+
+footer ul#white li a{
+    color: white;
+} 
+
+footer ul li a{
+    color: black;
+    text-decoration: none;
+    float: left;
+    padding: 15px 20px;
+} 
+
+footer ul li a:hover{
+    text-decoration: underline;
+}
+
+nav{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+nav ul{
+    /* background-color: #f5f5f5b5; */
+    float: left;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a{
+    color: black;
+    justify-content: space-between;
+    text-decoration: none;
+    float: left;
+    padding: 15px 30px;
+} 
+
+nav ul div{
+    margin: 4px;
+    margin-top: 10px;
+    height: 35px;
+    width: 35px;
+    float: right;
+}
+
+#defaultuserimg{
+    height: 100%;
+    width: 100%;
+}
+
+.logo{
+    float: left;
+    position: absolute;
+    width: 150px;
+    z-index: 2;
+    height: 40px;
+    padding-left: 25px;
+    padding-top: 5px;
+} 
+
+nav ul li a:hover{
+    color: #00000061;
+} 
+
+
+#middleHeading{
+    font-family: 'teslaregular';
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 135px;
+    font-size: 90px;
+}
+
+#headerdiv{
+    display: inline-block;
+    position: relative;
+    width: 100%;
+}
+
+#roadsterHeading{
+    color: black;
+    text-align: center;
+    margin: calc(2.0em + 1vw) 0 0 0;
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: calc(1.4em + 1vw);
+}
+
+#roadsterText{
+    color: black;
+    text-align: center;
+    margin: calc(3.0em + 1vw) 0 0 0;
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: calc(1.6em + 1vw);
+}
+
+.center{
+    position:absolute;
+    top: 0;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.customorder{
+    text-align: center;
+    margin: calc(13.8em + 1vw) 0 0 0;
+}
+
+.customorder a{
+    text-decoration: none;
+    border: solid 3px white;
+    border-radius: 25px;
+    width: calc(0.8em + 2vw);
+    color: white;
+    padding: 6px 6px;
+    font-size: 16px;
+}
+
+.customorder a:hover{
+    background-color: white;
+    color: black;
+}
+
+#middleText{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding-top: 15px;
+    line-height: 20px;
+    font-size: 14px;
+}
+
+.button{
+    text-align: center;
+}
+
+.button a{
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 7px 50px;
+    color: black;
+    border-radius: 28px;
+    font-size: 16px;
+}
+
+.carbutton{
+    text-align: center;
+    margin-right: 50px;
+}
+
+.carbutton a{
+    background-color: #ffffff;
+    text-decoration: none;
+    padding: 7px 50px;
+    color: black;
+    border-radius: 28px;
+    font-size: 16px;
+}
+
+#contact{
+    margin-top: 75px;
+}
+
+#accountdiv:hover{
+    cursor: pointer;
+}
+
+#backgroundModel3{
+    background: url("images/model3.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+#custcontent{
+    width: 100%;
+    height: 500px;
+}
+
+#backgroundModels{
+    background: url("images/models.jpg"); 
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+#backgroundModelX{
+    background: url("images/modelx.jpg");
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    width: 100%;
+    height: 1000px;
+}
+
+#submit{
+    padding: 0;
+    margin: auto;
+}
+
+#contactpage{
+    background-color: white;
+}
+
+#clear{
+    padding: 0;
+    margin: 0;
+}
+
+#carlinks{
+    justify-content: space-between;
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin-top: 16;
+}
+
+.caranchor{
+    width: 100%;
+    height: 100%;
+}
+
+.carlink{
+    display: flex;
+    height: 100%;
+    width: 28%;
+}
+
+#info{
+    margin: auto;
+    width: 350px;
+}
+
+#contactinfo{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: center;
+}
+
+#leftanchor:hover{
+    cursor: pointer;
+}
+
+#rightanchor:hover{
+    cursor: pointer;
+}
+
+#accountbody{
+    color: white;
+}
+
+#loginform{
+    margin: auto;
+    width: 355px;
+}
+
+#loginform ol{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0; 
+}
+
+#loginform ol li{
+    width: 100%; 
+}
+
+#loginform ol li label, input
+{
+    margin-top: 5px;
+    float: right;
+}
+
+#loginform ol li a:visited
+{
+    color: black;
+}
+
+#accountbuttons{
+    margin-top: 5px;
+    float: right;
+}
+
+#newaccountlink{
+    margin-top: 5px;
+    float: right;
+}
+
+@media only screen and (max-width: 1070px) {
+    nav{
+        display: block;
+    }
+
+    #accountdiv{
+        display: none;
+    }
+    
+    .logo{
+        display: none;
+    }
+
+    nav ul li a{
+        width: 100%;
+        float: left;
+        text-align: center;
+        padding: 10px 10px;
+    } 
+    
+    nav ul li img{
+        display: none;
+    } 
+
+    nav ul li:first-child{
+        padding-right: 0px;
+    } 
+    
+    nav ul li a:hover{
+        color: #00000061;
+    } 
+
+}
+
+@media only screen and (max-width: 850px) {
+    
+    #roadsterStats{
+        width: calc(82vw);
+    }
+    
+    .stat{
+        font-size: calc(3vw);
+    }
+
+    #maindesk{
+        object-fit: cover;
+    }
+
+    .customorder{
+        margin: calc(48vw + 1vw) 0 0 0;
+    }
+
+    .customorder a {
+        padding: calc(0vw + 1vw);
+        font-size: calc(0.5vw + 1vw);
+    }
+}
+
+@media only screen and (max-width: 376px) {
+  .logo{
+        display: none;
+    }
+
+    nav ul li a{
+        font-size: 18px;
+    } 
+}
+
+ol{
+    list-style-type: none;
+}
